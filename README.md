@@ -4,7 +4,7 @@ Coming soon page for [enhancebyhanan.com](https://enhancebyhanan.com).
 
 A single static page (`index.html`) with no build step. Open it in a browser to preview.
 
-Styled in brand direction 07 "Signature" (noir, pearl, champagne; Bodoni Moda, Corinthia, Jost). Colours and fonts live in the `:root` block at the top of the `<style>` tag.
+Uses the final ENHANCE by Hanan logo (outlined SVGs in `assets/`) and the black and white brand palette with Jost. Colours and fonts live in the `:root` block at the top of the `<style>` tag.
 
 ## Hosting
 
