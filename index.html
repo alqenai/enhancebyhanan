@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ENHANCE by Hanan · Coming soon</title>
+  <meta name="description" content="ENHANCE by Hanan, makeup artistry in Kuwait. Our website is coming soon.">
+  <meta property="og:title" content="ENHANCE by Hanan">
+  <meta property="og:description" content="Makeup artistry in Kuwait. Coming soon.">
+  <meta property="og:url" content="https://enhancebyhanan.com/">
+  <meta name="theme-color" content="#f6f1ea">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400&family=Alexandria:wght@300&display=swap" rel="stylesheet">
+  <style>
+    /*
+      Brand theme. Swap these values when a branding direction is chosen;
+      nothing below this block needs to change.
+    */
+    :root {
+      --bg: #f6f1ea;          /* soft ivory */
+      --ink: #1c1a18;         /* near black */
+      --muted: #7a7068;       /* warm grey */
+      --accent: #b89a6a;      /* champagne */
+      --font-display: "Cormorant Garamond", Georgia, serif;
+      --font-body: "Jost", "Helvetica Neue", Arial, sans-serif;
+      --font-arabic: "Alexandria", "Geeza Pro", Tahoma, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-body);
+      font-weight: 300;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: fade 1.6s ease both;
+    }
+
+    .wordmark {
+      margin: 0;
+      font-family: var(--font-display);
+      font-weight: 400;
+      font-size: clamp(2.8rem, 11vw, 6.5rem);
+      letter-spacing: 0.22em;
+      line-height: 1;
+      padding-left: 0.22em; /* balance trailing letter-spacing */
+    }
+
+    .by {
+      margin: 0.6rem 0 0;
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: clamp(1.4rem, 4.5vw, 2.2rem);
+      color: var(--accent);
+    }
+
+    .rule {
+      width: 3.5rem;
+      height: 1px;
+      background: var(--accent);
+      margin: 2.75rem 0 2rem;
+      border: 0;
+    }
+
+    .soon {
+      margin: 0;
+      font-size: 0.8rem;
+      letter-spacing: 0.45em;
+      text-transform: uppercase;
+      padding-left: 0.45em;
+    }
+
+    .soon-ar {
+      margin: 0.9rem 0 0;
+      font-family: var(--font-arabic);
+      font-size: 1rem;
+      color: var(--muted);
+    }
+
+    .tagline {
+      margin: 1.75rem 0 0;
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 2rem;
+      left: 0;
+      right: 0;
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+    }
+
+    footer a {
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color .3s, color .3s;
+    }
+    footer a:hover, footer a:focus-visible { color: var(--accent); border-color: var(--accent); }
+
+    @keyframes fade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+    @media (prefers-reduced-motion: reduce) { main { animation: none; } }
+    @media (max-height: 520px) { footer { position: static; margin-top: 2.5rem; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1 class="wordmark">ENHANCE</h1>
+    <p class="by">by Hanan</p>
+    <hr class="rule">
+    <p class="soon">Coming soon</p>
+    <p class="soon-ar" lang="ar" dir="rtl">قريباً</p>
+    <p class="tagline">Makeup artistry · Kuwait</p>
+  </main>
+  <footer>
+    <a href="https://www.instagram.com/hanan.abdullah.makeup/" target="_blank" rel="noopener">@HANAN.ABDULLAH.MAKEUP</a>
+  </footer>
+</body>
+</html>
